@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Donate</title>
+  <!-- NGO icon -->
+  <link rel="icon" href="img/Logo.jpg" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="fontawesome-free-5.12.0-web\css\all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <!--Dropdown hover--->
+  <link rel="stylesheet" href="css/dropdown_hover.css">
+  <!-- -Dynamic-Links -->
+ 	<script type="text/javascript" src="js/Link.js"></script>
+  
+</head>
+<body>
+
+    <!-- Start your project here-->  
+   <nav class="navbar navbar-expand-lg navbar-dark bg-warning fixed-top ">
+  <a class="navbar-brand" href="#">
+	<img src="img\Logo.jpg"  class="rounded-circle Image_Width"/>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarText"> 
+    <ul class="navbar-nav mr-auto ">
+      <li class="nav-item active">
+        <a class="nav-link text-dark font-weight-bold ml-5" onclick="Next()" id="home" href="#">HOME
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link  text-dark font-weight-bold ml-3" href="#" id="navbardrop" data-toggle="dropdown">ABOUT US</a>
+		
+			<div class="dropdown-menu dropdown-content ">
+				<a class="dropdown-item text-dark font-weight-bold" id ="AboutUs" onclick="Next()" href="#">ABOUT KBT</a>
+				<a class="dropdown-item text-dark font-weight-bold" href="Members" onclick="Next()">BOARD MEMBERS</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Admin" href="#" onclick="Next()">ADMINISTRATIVE & LEGAL STATUS</a>
+				
+			</div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link  text-dark font-weight-bold ml-3" href="#" id="navbardrop" data-toggle="dropdown">WHAT WE DO</a>
+		
+			<div class="dropdown-menu dropdown-content">
+				<a class="dropdown-item text-dark font-weight-bold" id="edu" href="#" onclick="Next()">Education</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Protect" href="#" onclick="Next()">Protection & Care</a>
+				<a class="dropdown-item text-dark font-weight-bold" id ="Skill" href="#" onclick="Next()">Life Skill Projects</a>
+				<a class="dropdown-item text-dark font-weight-bold" id ="Sports" href="#" onclick="Next()">Sports</a>
+				<a class="dropdown-item text-dark font-weight-bold" id = "Elder" href="#" onclick="Next()">Elderly Care</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Awareness" href="#" onclick="Next()">Awareness Program</a>
+				
+			</div>
+      </li>
+	  <li class="nav-item dropdown">
+        <a class="nav-link  text-dark font-weight-bold ml-3" href="#" id="navbardrop" data-toggle="dropdown">WHAT YOU CAN DO</a>
+		 
+			<div class="dropdown-menu dropdown-content ">
+				<a class="dropdown-item text-dark font-weight-bold" id="Involve" href="#" onclick="Next()">Get Involved</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Friend" href="#" onclick="Next()">Be A Friend</a>
+				<a class="dropdown-item text-dark font-weight-bold" id= "SponsorChild" href="#" onclick="Next()">Sponsor A Child</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="SponsorEvent" href="#" onclick="Next()">Sponsor An Event</a>
+				<a class="dropdown-item text-dark font-weight-bold" id = "CSR" href="#" onclick="Next()">Corporate Social Responsibility (CSR)</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Donate" href="#" onclick="Next()">Donate</a>
+				
+				
+			</div>
+      </li>
+	  <li class="nav-item ">
+        <a class="nav-link text-dark font-weight-bold ml-3" id="Event&Press"href="#" onclick="Next()">EVENT & PRESS </a>
+      </li>
+	  <li class="nav-item ">
+        <a class="nav-link text-dark font-weight-bold ml-3" id ="ContactUs" href="#" onclick="Next()">CONTACT US</a>
+	  </li>
+	  <li class="nav-item ">
+        <a class="nav-link text-dark font-weight-bold ml-3" id ="DonateLink" href="#" onclick="Next()">DONATE</a>
+	  </li>	
+          
+    </ul>
+    
+  </div>
+</nav>
+  
+    <div class="jumbotron ">
+		
+		<h2 class="text-center"> <b>DONATE</b></h2>
+			<div class="row-xl  ">
+			<img src="img\get-cash.png" class="rounded-circle mx-auto d-block" alt="DonateImage"></div>
+			<!--<label><b>Choose a cause</b></label>
+			<div class="form-check-inline ml-5">
+				<label class="form-check-label" for="radio1">
+					<input type ="radio" class="form-check-input" name ="optradio1" id ="radio1" value="Elderly Care">Elderly Care
+				</label>
+			</div>
+			<div class="form-check-inline">
+				<label class="form-check-label" for="radio2">
+					<input type ="radio" class="form-check-input" name ="optradio2" id ="radio2" value="Sponsor A Child" >Sponsor A Child
+				</label>
+			</div>
+			<div class="form-check-inline">
+				<label class="form-check-label" for="radio3">
+					<input type ="radio" class="form-check-input" name ="optradio3" id ="radio3" value="Sponsor An Event">Sponsor An Event
+				</label>
+			</div>
+			<div class="form-check-inline">
+				<label class="form-check-label" for="radio4">
+					<input type ="radio" class="form-check-input" name ="optradio4" id ="radio4" value="Education" >Education
+				</label>
+			</div>--->
+		<p>
+			<b>Bank Details are given below:</b>
+		</p>
+			<div class="container ">
+				<div class="row justify-content-center">
+					<div class="col-sm-3">
+						ACCOUNT NAME:
+					</div>
+					<div class="col-sm-5 ">
+						<b>KRIPA BENOVOLENT TRUST</b>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center">
+					<div class="col-sm-3">
+						BANK NAME: 
+					</div>
+					<div class="col-sm-5">
+						<b> STATE BANK OF INDIA</b>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center">
+					<div class="col-sm-3">
+						ACCOUNT NO: 
+					</div>
+					<div class="col-sm-5">
+						<b>037807298609</b>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center">
+					<div class="col-sm-3">
+						ACCOUNT TYPE: 
+					</div>
+					<div class="col-sm-5">
+						<b>CURRENT ACCOUNT</b>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center">
+					<div class="col-sm-3">
+						BRANCH: 
+					</div>
+					<div class="col-sm-5">
+						<b> BALLYGUNGE RLY. STN.</b>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center">
+					<div class="col-sm-3">
+						IFSC CODE: 
+					</div>
+					<div class="col-sm-5">
+						<b> SBIN0003951</b>
+					</div>
+				</div>
+					 
+			</div>
+		
+			<div class="row mt-3">
+				<p class="ml-5"><b class="mr-3">** Please note:</b>DONATION MADE TO KRIPA BENEVOLENT TRUST IS EXEMPTED FROM INCOME TAX U/S 80G OF THE INCOME TAX ACT 1961 VIDE ORDER ITBA/EXM/S/80G/2019-20/ 1018783727 dt: 11/10/2019.</p>
+			</div>
+		
+	</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small orange darken-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact Us</h5>
+	  <address>
+		KRIPA BENEVOLENT TRUST
+		<br/>
+		18/2 DHARMATALA ROAD, BOSEPUKUR, KASBA
+		KOLKATA-700042, W.B. INDIA
+	  </address>
+	  <p>
+		PHONE :8820206050
+	  </p>
+	  <p>
+		<a href="kbtrust2018@gmail.com">EMAIL: kbtrust2018@gmail.com</a>
+	  </p>
+	  <p>
+		<a href="#">WEBSITE: www.kripabenevolenttrust.com</a>
+	  </p>
+
+       
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Useful Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">ABOUT US</a>
+          </li>
+          <li>
+            <a href="#!">WHAT WE DO</a>
+          </li>
+          <li>
+            <a href="#!">WHAT YOU CAN DO</a>
+          </li>
+          <li>
+            <a href="#!">EVENT & PRESS</a>
+          </li>
+		  <li>
+            <a href="#!">DONATE</a>
+          </li>
+		  
+        </ul>
+
+      </div>
+      
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      
+      <div class="col-md-3 mx-auto">
+			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Connect With Us</h5>
+				<a class="btn-floating btn-fb ml-5">
+					<i class="fab fa-facebook fa-5x animate bounce infinite" size="lg"></i>
+				</a>
+      
+		
+
+      </div>
+      <!-- Grid column -->
+	  
+		
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a href="#">© 2020 Copyright: WWW.KripaBenovolentTrust.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+</html>

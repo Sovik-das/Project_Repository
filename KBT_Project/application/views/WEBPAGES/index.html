@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Home</title>
+  <!-- NGO icon -->
+  <link rel="icon" href="<?php echo base_url(); ?>assets/img/Logo.jpg" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/fontawesome-free-5.12.0-web\css\all.css">
+  
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
+  <!--Dropdown hover--->
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/dropdown_hover.css">
+  
+</head>
+<body>
+
+  <!-- Start your project here-->  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning fixed-top ">
+  <a class="navbar-brand" href="#">
+	<img src="<?php echo base_url(); ?>assets/img/Logo.jpg"  class="rounded-circle Image_Width"/>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarText"> 
+    <ul class="navbar-nav mr-auto ">
+      <li class="nav-item active">
+        <a class="nav-link text-dark font-weight-bold ml-5"  id="home" href="#">HOME
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link  text-dark font-weight-bold ml-3" href="#" id="navbardrop" data-toggle="dropdown">ABOUT US</a>
+		
+			<div class="dropdown-menu dropdown-content ">
+				<a class="dropdown-item text-dark font-weight-bold" id ="AboutUs" onclick="Next()" href="#">ABOUT KBT</a>
+				<a class="dropdown-item text-dark font-weight-bold" href="Members" onclick="Next()">BOARD MEMBERS</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Admin" href="#" onclick="Next()">ADMINISTRATIVE & LEGAL STATUS</a>
+				
+			</div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link  text-dark font-weight-bold ml-3" href="#" id="navbardrop" data-toggle="dropdown">WHAT WE DO</a>
+		
+			<div class="dropdown-menu dropdown-content">
+				<a class="dropdown-item text-dark font-weight-bold" id="edu" href="#" onclick="Next()">Education</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Protect" href="#" onclick="Next()">Protection & Care</a>
+				<a class="dropdown-item text-dark font-weight-bold" id ="Skill" href="#" onclick="Next()">Life Skill Projects</a>
+				<a class="dropdown-item text-dark font-weight-bold" id ="Sports" href="#" onclick="Next()">Sports</a>
+				<a class="dropdown-item text-dark font-weight-bold" id = "Elder" href="#" onclick="Next()">Elderly Care</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Awareness" href="#" onclick="Next()">Awareness Program</a>
+				
+			</div>
+      </li>
+	  <li class="nav-item dropdown">
+        <a class="nav-link  text-dark font-weight-bold ml-3" href="#" id="navbardrop" data-toggle="dropdown">WHAT YOU CAN DO</a>
+		 
+			<div class="dropdown-menu dropdown-content ">
+				<a class="dropdown-item text-dark font-weight-bold" id="Involve" href="#" onclick="Next()">Get Involved</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Friend" href="#" onclick="Next()">Be A Friend</a>
+				<a class="dropdown-item text-dark font-weight-bold" id= "SponsorChild" href="#" onclick="Next()">Sponsor A Child</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="SponsorEvent" href="#" onclick="Next()">Sponsor An Event</a>
+				<a class="dropdown-item text-dark font-weight-bold" id = "CSR" href="#" onclick="Next()">Corporate Social Responsibility (CSR)</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Donate" href="#" onclick="Next()">Donate</a>
+				
+				
+			</div>
+      </li>
+	  <li class="nav-item ">
+        <a class="nav-link text-dark font-weight-bold ml-3" id="Event&Press"href="#" onclick="Next()">EVENT & PRESS </a>
+      </li>
+	  <li class="nav-item ">
+        <a class="nav-link text-dark font-weight-bold ml-3" id ="ContactUs" href="#" onclick="Next()">CONTACT US</a>
+	  </li>
+	  <li class="nav-item ">
+        <a class="nav-link text-dark font-weight-bold ml-3" id ="DonateLink" href="#" onclick="Next()">DONATE</a>
+	  </li>	
+          
+    </ul>
+    
+  </div>
+</nav>
+
+<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade animated fadeInRight" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="<?php echo base_url(); ?>assets/img/NAVAJYOTI CRECHE (3).jpg" width="1600px" height="600px"
+          alt="First slide">
+        
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Light mask</h3>
+        <p>First text</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="<?php echo base_url(); ?>assets/img/MealPic_2.jpg" width="1600px" height="600px" 
+          alt="Second slide">
+        
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Strong mask</h3>
+        <p>Secondary text</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="<?php echo base_url(); ?>assets/img/SlumEdu_1.jpg" width="1600px" height="600px"
+          alt="Third slide">
+        
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Slight mask</h3>
+        <p>Third text</p>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+	<!---Jumpbotron--->
+	<div class="jumbotron text-center  pt-3">
+		<div class="container-fluid">
+			<h1 class="display-4" >About Us</h1>
+			<p class="justify-content-center mx-5">
+				<b>Kripa Benevolent Trust</b>
+				is social welfare organization based in Kolkata, West Bengal, started its
+				philanthropic work for the underprivileged since 2017 and registered under Trust Act  
+				in March 2018. 
+
+			</p>
+			<button class="btn btn-primary" onclick ="location.href='About_Us.html';">Read more</button>
+		</div>
+	</div>
+<!---Jumpbotron_End-->
+
+<!-- Card -->
+<div class="container-fluid text-center">
+	<h1 class="display-4"> Our Causes</h1>
+<div class="card-columns py-3">
+  <div class="card ">
+	<img class="card-img-top" src="<?php echo base_url(); ?>assets/img/SlumEdu_1.jpg" alt="Card image" height="190px" width="400px">
+    <div class="card-body text-center">
+		<h4 class="card-title">Education</h4>
+      <p class="card-text">Some text inside the first card</p>
+	  <a href="#" class="btn btn-primary stretched-link" onclick ="location.href='Free_Coaching_Class.html';">Read More</a>
+    </div>
+  </div>
+  <div class="card ">
+	<img class="card-img-top" src="<?php echo base_url(); ?>assets/img/ElderlyPeople.jpg" alt="Card image" height="190px" width="400px" margin="0px">
+    <div class="card-body text-center">
+		
+		<h4 class="card-title">Elderly Care</h4>
+		<p class="card-text">Some text inside the first card</p>
+		<a href="#" class="btn btn-primary stretched-link" onclick ="location.href='ElderlyCare.html';">Read More</a>
+    </div>
+  </div>
+  <div class="card ">
+	<img class="card-img-top" src="<?php echo base_url(); ?>assets/img/Skill_Development.jpg" alt="Card image" height="190px" width="400px">
+    <div class="card-body text-center">
+	  
+		<h4 class="card-title">Skill Development Training</h4>	
+      <p class="card-text">Some text inside the first card</p>
+	  <a href="#" class="btn btn-primary stretched-link" onclick ="location.href='Life_Skill_Project.html';">Read More</a>
+    </div>
+  </div>
+ </div> 
+</div>
+<!-- Card -->
+<!-- Footer -->
+<footer class="page-footer font-small orange darken-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact Us</h5>
+	  <address>
+		KRIPA BENEVOLENT TRUST
+		<br/>
+		18/2 DHARMATALA ROAD, BOSEPUKUR, KASBA
+		KOLKATA-700042, W.B. INDIA
+	  </address>
+	  <p>
+		PHONE :8820206050
+	  </p>
+	  <p>
+		<a href="kbtrust2018@gmail.com">EMAIL: kbtrust2018@gmail.com</a>
+	  </p>
+	  <p>
+		<a href="#">WEBSITE: www.kripabenevolenttrust.com</a>
+	  </p>
+
+       
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Useful Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a  id="About_Us" href="#">ABOUT US</a>
+          </li>
+          <li>
+            <a href="#">WHAT WE DO</a>
+          </li>
+          <li>
+            <a href="#">WHAT YOU CAN DO</a>
+          </li>
+          <li>
+            <a href="#">EVENT & PRESS</a>
+          </li>
+		  <li>
+            <a href="#">DONATE</a>
+          </li>
+		  
+        </ul>
+
+      </div>
+      
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      
+      <div class="col-md-3 mx-auto">
+			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Connect With Us</h5>
+				<a class="btn-floating btn-fb ml-5">
+					<i class="fab fa-facebook fa-5x animate bounce infinite" size="lg"></i>
+				</a>
+      
+		
+
+      </div>
+      <!-- Grid column -->
+	  
+		
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a href="#">© 2020 Copyright: WWW.KripaBenovolentTrust.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+  <!-- -Dynamic-Links -->
+ 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/Link.js"></script>
+
+</body>
+</html>
