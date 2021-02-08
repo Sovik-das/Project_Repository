@@ -1,13 +1,7 @@
+<div class="text-center">
+<h1>Kripa Benovolent Trust</h1>
 
-<!--  Navbar-->
-<nav class="navbar navbar-expand-sm bg-light mt-0 pt-0 fixed-top">
-   <a class="navbar-brand" href="#">
-    <img src="<?php echo base_url(); ?>assets/img/Logo.jpg" class="rounded-circle Image_Width center" alt="Logo" >
-  </a>
-  
-</nav>
-
-
+</div>
 
 	<div class=" container  my-5 bg-primary ">
 	
@@ -15,7 +9,7 @@
 				<!-- Icon -->
 		    
 		      		<!-- Login Form -->
-				   <form >
+				   <form>
 				   <div class="form-row my-5">
 				   	 <img src="<?php echo base_url(); ?>assets/img/Login_Img.png"  class="Image_Width mx-auto"alt="Login_img">
 				   
