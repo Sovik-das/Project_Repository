@@ -41,7 +41,7 @@ $config = array(
 				array(
                         'field' => 'StreetName',
                         'label' => 'Street Name',
-                        'rules' => 'required|alpha|regex_match[//]'
+                        'rules' => 'required'
                 ),
 				array(
                         'field' => 'Pincode',

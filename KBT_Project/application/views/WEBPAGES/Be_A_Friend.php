@@ -57,23 +57,18 @@
 				
 			<div class="row">
 				<div class="form-inline pb-4">
+					<label for="Gender" required> Gender:</label>
 					<div class="col">
-						<label for="Gender" required> Gender:</label>
+						
+							<select class="form-control" id="gender">
+						    	<option>Male</option>
+						   		 <option>Female</option>
+
+						  </select>
+						
+						</div>
 					</div>
-					<div class="col">	
-						<label class="form-check-label mx-2">
-						<input name="Male" class="form-check-input" id="male" type="checkbox" >Male
-							<!-- <div class="valid-feedback">Valid</div>
-							<div class="invalid-feedback">Please fill this field</div> -->
-						</label>
-					</div>
-					<div class="col">	
-						<label class="form-check-label mx-2">
-						<input name="Female" class="form-check-input" id="female" type="checkbox" >Female
-							<!-- <div class="valid-feedback">Valid</div>
-							<div class="invalid-feedback">Please fill this field</div> -->
-						</label>
-					</div>	
+					
 				</div>
 			</div>
 			<div class="row">
