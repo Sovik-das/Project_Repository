@@ -57,10 +57,12 @@
 				
 			<div class="row">
 				<div class="form-inline pb-4">
-					<label for="Gender" required> Gender:</label>
 					<div class="col">
+					<label for="Gender" required> Gender:</label></div>
+					<div class="col ml-2">
 						
 							<select class="form-control" id="gender">
+								<option>Select One Option</option>
 						    	<option>Male</option>
 						   		 <option>Female</option>
 
@@ -70,13 +72,13 @@
 					</div>
 					
 				</div>
-			</div>
+			
 			<div class="row">
 				<div class="form-inline pb-4">
 						<div class="col">
 							<label>Date of Birth:</label>
 						</div>	
-						<div class="col ml-5">
+						<div class="col ml-2">
 							<input name="DOB" class="form-control " type ="date" id="DOB" value ="<?php echo set_value('DOB');?>">
 							
 						</div>
@@ -241,41 +243,25 @@
 					</div>
 				</div>
 				
-					<h4 class="mb-3">Employment Status</h4>
 				
 				<div class="row">
-					<div  class="form-inline pb-4">
-						<div class="col">	
-							<label class="form-check-label mx-2">
-							<input name="Not_Employed" class="form-check-input" type="checkbox">Not Employed</label>
-						</div>
-						<div class="col-2-md">	
-							<label class="form-check-label mx-2">
-							<input name="GovtEmployee" class="form-check-input" type="checkbox">Govt. Employed</label>
-						</div>
-						<div class="col">	
-							<label class="form-check-label mx-2">
-							<input name="Male" class="form-check-input" type="checkbox">Not Employed</label>
-						</div>
+					<div class="col-md">
+					<label>Employment Status</label>
+					
+					</div>
+					<div class="col">
+							<select class="form-control" id="employment_status">
+								<option>Select One Option</option>
+						    	<option>Not Employed</option>
+						   		 <option>Govt. Employed</option>
+						   		 <option>Private Sector Employee</option>
+						   		 <option>Working in NGO</option>
+						   		 <option>Other</option>
+
+						  </select>
 					</div>
 				</div>
-				<div class="row-lg">
-					<div  class="form-inline pb-4">
-						<div class="col-4-md">	
-							<label class="form-check-label mr-2">
-							<input name="Not_Employed" class="form-check-input" type="checkbox">Private Sector Employee</label>
-						</div>
-						<div class="col-2-md">	
-							<label class="form-check-label mx-3">
-							<input name="GovtEmployee" class="form-check-input" type="checkbox">Working in NGO</label>
-						</div>
-						<div class="col-3-sm">	
-							<label class="form-check-label ">
-							<input name="Male" class="form-check-input" type="checkbox">Other</label>
-						</div>
-					</div>
 				
-				</div>
 				<h4 class="mb-3">Write about self in 250 words:</h4>
 				<div class="row-lg pb-4">
 					<textarea  name="Self" type="text" class="form-control-lg  col-5" value ="<?php echo set_value('Self');?>" ></textarea>
