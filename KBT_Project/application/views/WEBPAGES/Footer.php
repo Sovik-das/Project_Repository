@@ -42,22 +42,22 @@
 
         <ul class="list-unstyled">
           <li>
-            <a  id="About_Us" href="<?php echo base_url();?>index.php/Welcome/AboutUs">ABOUT US</a>
+            <a  id="About_Us" href="<?php echo base_url();?>Welcome/AboutUs">ABOUT US</a>
           </li>
           <li>
-            <a href="<?php echo base_url();?>index.php/Welcome/FreeCoachingClass">WHAT WE DO</a>
+            <a href="<?php echo base_url();?>Welcome/FreeCoachingClass">WHAT WE DO</a>
           </li>
           <li>
-            <a href="<?php echo base_url();?>index.php/Welcome/GetInvolved">WHAT YOU CAN DO</a>
+            <a href="<?php echo base_url();?>Welcome/GetInvolved">WHAT YOU CAN DO</a>
           </li>
           <li>
-            <a href="<?php echo base_url();?>index.php/Welcome/Event_And_Press">EVENT & PRESS</a>
+            <a href="<?php echo base_url();?>Welcome/Event_And_Press">EVENT & PRESS</a>
           </li>
 		  <li>
-            <a href="<?php echo base_url();?>index.php/Welcome/Donate">DONATE</a>
+            <a href="<?php echo base_url();?>Welcome/Donate">DONATE</a>
           </li>
            <li>
-            <a href="<?php echo base_url();?>index.php/Login">LOGIN</a>
+            <a href="<?php echo base_url();?>Login">LOGIN</a>
           </li>
 		  
         </ul>

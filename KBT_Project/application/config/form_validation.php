@@ -1,21 +1,21 @@
 <?php
 
 $config = array(
-        'friend_form_validation' => array(
+        'friend_validation' => array(
                 array(
                         'field' => 'fname',
                         'label' => 'First Name',
-                        'rules' => 'required|alpha'
+                        'rules' => 'required|alpha|min_length[3]'
                 ),
                 array(
                         'field' => 'Mname',
                         'label' => 'Middle Name',
-                        'rules' => 'alpha'
+                        'rules' => 'alpha|min_length[3]'
                 ),
                 array(
                         'field' => 'lname',
                         'label' => 'Last Name',
-                        'rules' => 'required|alpha'
+                        'rules' => 'required|alpha|min_length[3]'
                 ),
 				array(
                         'field' => 'DOB',
@@ -25,13 +25,9 @@ $config = array(
 				array(
                         'field' => 'FName',
                         'label' => 'Father/Spouse Name',
-                        'rules' => 'required'
+                        'rules' => 'required|min_length[3]'
                 ),
-				array(
-                        'field' => 'FName',
-                        'label' => 'Father/Spouse Name',
-                        'rules' => 'required'
-                ),
+				
 				array(
                         'field' => 'PlotNo',
                         'label' => 'Flat/Plot No',
@@ -68,11 +64,7 @@ $config = array(
                         'label' => 'Aadhar',
                         'rules' => 'numeric|exact_length[16]'
                 ),	
-				array(
-                        'field' => 'Self',
-                        'label' => 'Write about self in 250 words',
-                        'rules' => 'numeric|exact_length[10]'
-                ),
+				
 				array(
                         'field' => 'Self',
                         'label' => 'Write about self',
@@ -81,12 +73,37 @@ $config = array(
 				array(
                         'field' => 'Why',
                         'label' => 'Reason why you want to be a member of this trust',
-                        'rules' => 'required|alpha_numeric_space|callback_count_words'
+                        'rules' => 'required|alpha_numeric_spaces|callback_count_words'
                 ),
 				array(
                         'field' => 'submit_date',
                         'label' => 'Date',
                         'rules' => 'required'
+                ),
+				array(
+                        'field' => 'City',
+                        'label' => 'City',
+                        'rules' => 'required|alpha|min_length[3]'
+                ),
+				array(
+                        'field' => 'State',
+                        'label' => 'State',
+                        'rules' => 'required|alpha_numeric_spaces|min_length[3]'
+                ),
+				array(
+                        'field' => 'Country',
+                        'label' => 'Country',
+                        'rules' => 'required|alpha|min_length[3]'
+                ),
+				array(
+                        'field' => 'gender',
+                        'label' => 'Gender',
+                        'rules' => 'required|callback_check_select_input'
+                ),
+				array(
+                        'field' => 'employment_status',
+                        'label' => 'Employment Status',
+                        'rules' => 'required|callback_check_select_input'
                 ),
 	
 	

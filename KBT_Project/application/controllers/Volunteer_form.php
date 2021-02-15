@@ -5,16 +5,29 @@ class Volunteer_form extends CI_Controller {
 
 	public function index(){
 	
-		
-		
-		if($this->form_validation->run('friend_form_validation')){
+		//$this->load->view('WEBPAGES/Be_A_Friend.php');
+
+		if($this->form_validation->run('friend_validation')){
 			echo ("Validation Successfull");
 		}
 		else{
 				$this->load->view('WEBPAGES/Be_A_Friend.php');
+					//echo("Not Successfull");
 			
 		}
+		
                
+	}
+
+	public function check_select_input($value){
+			
+		if ($value=='0'){
+			
+			$this->form_validation->set_message('check_select_input', 'Please Choose a option');
+			return false;
+		}
+		else
+			return true;
 	}
 
 	public function count_words($str){

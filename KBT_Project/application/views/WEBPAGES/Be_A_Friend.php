@@ -21,7 +21,7 @@
 		<h3 class="text-center pb-3"><b>Volunteer Registration Form</b></h3>
 		<div class="container  shadow form_bg"><span class="rounded"></span>
 			<?php echo form_open('Volunteer_form'); ?>
-		<form >
+		
 			<div class="row my-3 py-3"">
 					<div class="form-inline pb-4">
 						<div class="col">
@@ -57,17 +57,20 @@
 				
 			<div class="row">
 				<div class="form-inline pb-4">
-					<div class="col">
-					<label for="Gender" required> Gender:</label></div>
-					<div class="col ml-2">
+					<div class="col mx-2">
+						<label for="Gender" required> Gender:</label></div>
+					<div class="col mx-2">
 						
-							<select class="form-control" id="gender">
-								<option>Select One Option</option>
-						    	<option>Male</option>
-						   		 <option>Female</option>
+							<select class="form-control" name="gender" placeholder="Select Gender">
+								<option value ="0" selected="selected">Select One Option</option>
+						    	<option value ="1">Male</option>
+						   		 <option value ="2">Female</option>
 
 						  </select>
 						
+						</div>
+						<div class="col text-danger small">
+								<?php echo form_error('gender');?>
 						</div>
 					</div>
 					
@@ -78,7 +81,7 @@
 						<div class="col">
 							<label>Date of Birth:</label>
 						</div>	
-						<div class="col ml-2">
+						<div class="col ">
 							<input name="DOB" class="form-control " type ="date" id="DOB" value ="<?php echo set_value('DOB');?>">
 							
 						</div>
@@ -130,47 +133,48 @@
 			</div>			
 			<div class="row">
 					<div class="form-inline pb-4">
-						<div class="col">
-							<label class="mr-4">City:</label>
+						<div class="col-sm-2">
+							<label for="City">City:</label>
 						</div>	
 						<div class="col">	
-							<select name="City" class="form-control"  id="City">
-								<option data-countryCode="IN" value="91">India(+91)</option>
-								<option data-countryCode="US" value="1">USA(+1)</option>
-								<option data-countryCode="UK" value ="44">UK(+44)</option>
-							</select>
-							<!-- <input for="City" class="form-control "  id="City" required> -->
-							<!-- <div class="valid-feedback">Valid</div>
-							<div class="invalid-feedback">Please fill this field</div> -->
+							<input name="City" class="form-control mx-2"  id="City" value ="<?php echo set_value('City');?>">
 						</div>	
-						
-						<div class="col">
-							<label>Pincode:</label>	
+						<div class-"col">
+							<div class="col-md text-danger small"><?php echo form_error('City');?>
+							</div>
 						</div>
+					</div>
+			</div>
+						
+						<div class="row">
+							<div class="form-inline pb-4">
+								<div class="col">
+									<label>Pincode:</label>	
+								</div>
 						<div class="col">	
 							<input name="Pincode" class="form-control mx-2"  id="Pincode" value ="<?php echo set_value('Pincode');?>">
 							
 						</div>
-							<div class-"row-lg">
+							
 							<div class="col-md text-danger small"><?php echo form_error('Pincode');?>
 							</div>
 						</div>
 					</div>	
-			</div>	
+			
 				<div class="row-lg">
 					<div class="form-inline pb-4">
 						<label class="mr-5">State:</label>	
 						<input name="State" class="form-control"  id="State" value ="<?php echo set_value('State');?>">
-						<!-- <div class="valid-feedback">Valid</div>
-							<div class="invalid-feedback">Please fill this field</div> -->
+						<div class="col text-danger small"><?php echo form_error('State');?></div>
+							
 					</div>
 				</div>	
 				<div class="row-lg">
 					<div class="form-inline pb-4">	
 						<label class="mr-4">Country:</label>	
 						<input name="Country" class="form-control"  id="Country" value ="<?php echo set_value('Country');?>">
-						<!-- -<div class="valid-feedback">Valid</div>
-							<div class="invalid-feedback">Please fill this field</div> -->
+						<div class="col text-danger small"><?php echo form_error('Country');?></div>
+							
 					</div>
 				</div>
 				<div class="row">
@@ -178,13 +182,7 @@
 						<div class="col">
 							<label class="mr-4">Mobile:</label>	
 						</div>	
-						<div class="col-2-sm">
-							<select name="CountryCode" class="form-control" type="number" min="10" id="CountryCode">
-								<option data-countryCode="IN" value="91">India(+91)</option>
-								<option data-countryCode="US" value="1">USA(+1)</option>
-								<option data-countryCode="UK" value ="44">UK(+44)</option>
-							</select>	
-						</div>	
+						
 						<div class="col">
 							<input name="Mobile" type ="tel"class="form-control"  id="Mobile" value ="<?php echo set_value('Mobile');?>">
 							
@@ -244,22 +242,24 @@
 				</div>
 				
 				
-				<div class="row">
-					<div class="col-md">
-					<label>Employment Status</label>
+				
 					
-					</div>
-					<div class="col">
-							<select class="form-control" id="employment_status">
-								<option>Select One Option</option>
-						    	<option>Not Employed</option>
-						   		 <option>Govt. Employed</option>
-						   		 <option>Private Sector Employee</option>
-						   		 <option>Working in NGO</option>
-						   		 <option>Other</option>
+					<label><h4>Employment Status</h4></label>
+					<div class="col mb-3">
+					
+							<select class="form-control" name="employment_status">
+								<option value="0" selected="selected">Select One Option</option>
+						    	<option value ="1">Not Employed</option>
+						   		 <option value ="2">Govt. Employed</option>
+						   		 <option value ="3">Private Sector Employee</option>
+						   		 <option value ="4">Working in NGO</option>
+						   		 <option value ="5">Other</option>
 
 						  </select>
-					</div>
+					
+				</div>
+				<div class="col text-danger small">
+						<?php echo form_error('employment_status');?>
 				</div>
 				
 				<h4 class="mb-3">Write about self in 250 words:</h4>
@@ -289,6 +289,9 @@
 								<input type="date" name="submit_date"class="form-control ml-4" value ="<?php echo set_value('submit_date');?>">
 								
 							</div>
+					</div>
+					<div class="col text-danger small">
+							<?php echo form_error('submit_date');?>
 					</div>		
 					
 				</div>
@@ -297,7 +300,7 @@
 						
 					</div>
 					<div class="col">
-						<button class="btn btn-lg bg-info ml-3 text-white float-right">Register</button>
+						<button type ="submit" class="btn btn-lg bg-info ml-3 text-white float-right">Register</button>
 					
 					</div>
 				</div>

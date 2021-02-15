@@ -13,7 +13,7 @@
   <div class="collapse navbar-collapse " id="navbarText"> 
     <ul class="navbar-nav mr-auto ">
       <li class="nav-item active">
-        <a class="nav-link text-dark font-weight-bold ml-5"  id="home" href="<?php echo base_url();?>index.php/Welcome/Home">HOME
+        <a class="nav-link text-dark font-weight-bold ml-5"  id="home" href="<?php echo base_url();?>Welcome/Home">HOME
           <span class="sr-only">(current)</span>
         </a>
       </li>
@@ -22,9 +22,9 @@
 		
 			<div class="dropdown-menu dropdown-content ">
 				
-				<a class="dropdown-item text-dark font-weight-bold" id ="AboutUs"  href="<?php echo base_url();?>index.php/Welcome/AboutUs">ABOUT KBT</a>
+				<a class="dropdown-item text-dark font-weight-bold" id ="AboutUs"  href="<?php echo base_url();?>Welcome/AboutUs">ABOUT KBT</a>
 				<a class="dropdown-item text-dark font-weight-bold" href="Members">BOARD MEMBERS</a>
-				<a class="dropdown-item text-dark font-weight-bold" id="Admin" href="<?php echo base_url();?>index.php/Welcome/AdministrativePage">ADMINISTRATIVE & LEGAL STATUS</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Admin" href="<?php echo base_url();?>Welcome/AdministrativePage">ADMINISTRATIVE & LEGAL STATUS</a>
 				
 			</div>
       </li>
@@ -32,12 +32,12 @@
         <a class="nav-link  text-dark font-weight-bold ml-3" href="#" id="navbardrop" data-toggle="dropdown">WHAT WE DO</a>
 		
 			<div class="dropdown-menu dropdown-content">
-				<a class="dropdown-item text-dark font-weight-bold" id="edu" href="<?php echo base_url();?>index.php/Welcome/FreeCoachingClass">Education</a>
-				<a class="dropdown-item text-dark font-weight-bold" id="Protect" href="<?php echo base_url();?>index.php/Welcome/ProtectionAndCare" >Protection & Care</a>
-				<a class="dropdown-item text-dark font-weight-bold" id ="Skill" href="<?php echo base_url();?>index.php/Welcome/LifeSkill_Project">Life Skill Projects</a>
-				<a class="dropdown-item text-dark font-weight-bold" id ="Sports" href="<?php echo base_url();?>index.php/Welcome/Sports">Sports</a>
-				<a class="dropdown-item text-dark font-weight-bold" id = "Elder" href="<?php echo base_url();?>index.php/Welcome/ElderlyCare" >Elderly Care</a>
-				<a class="dropdown-item text-dark font-weight-bold" id="Awareness" href="<?php echo base_url();?>index.php/Welcome/Awareness">Awareness Program</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="edu" href="<?php echo base_url();?>Welcome/FreeCoachingClass">Education</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Protect" href="<?php echo base_url();?>Welcome/ProtectionAndCare" >Protection & Care</a>
+				<a class="dropdown-item text-dark font-weight-bold" id ="Skill" href="<?php echo base_url();?>Welcome/LifeSkill_Project">Life Skill Projects</a>
+				<a class="dropdown-item text-dark font-weight-bold" id ="Sports" href="<?php echo base_url();?>Welcome/Sports">Sports</a>
+				<a class="dropdown-item text-dark font-weight-bold" id = "Elder" href="<?php echo base_url();?>Welcome/ElderlyCare" >Elderly Care</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Awareness" href="<?php echo base_url();?>Welcome/Awareness">Awareness Program</a>
 				
 			</div>
       </li>
@@ -45,24 +45,24 @@
         <a class="nav-link  text-dark font-weight-bold ml-3" href="#" id="navbardrop" data-toggle="dropdown">WHAT YOU CAN DO</a>
 		 
 			<div class="dropdown-menu dropdown-content ">
-				<a class="dropdown-item text-dark font-weight-bold" id="Involve" href="<?php echo base_url();?>index.php/Welcome/GetInvolved">Get Involved</a>
-				<a class="dropdown-item text-dark font-weight-bold" id="Friend" href="<?php echo base_url();?>index.php/Volunteer_form">Be A Friend</a>
-				<a class="dropdown-item text-dark font-weight-bold" id= "SponsorChild" href="<?php echo base_url();?>index.php/Welcome/Sponsor_A_Child">Sponsor A Child</a>
-				<a class="dropdown-item text-dark font-weight-bold" id="SponsorEvent" href="<?php echo base_url();?>index.php/Welcome/Sponsor_An_Event">Sponsor An Event</a>
-				<a class="dropdown-item text-dark font-weight-bold" id = "CSR" href="<?php echo base_url();?>index.php/Welcome/CSR_Page" >Corporate Social Responsibility (CSR)</a>
-				<a class="dropdown-item text-dark font-weight-bold" id="Donate" href="<?php echo base_url();?>index.php/Welcome/Donate">Donate</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Involve" href="<?php echo base_url();?>Welcome/GetInvolved">Get Involved</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Friend" href="<?php echo base_url();?>Volunteer_form">Be A Friend</a>
+				<a class="dropdown-item text-dark font-weight-bold" id= "SponsorChild" href="<?php echo base_url();?>Welcome/Sponsor_A_Child">Sponsor A Child</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="SponsorEvent" href="<?php echo base_url();?>Welcome/Sponsor_An_Event">Sponsor An Event</a>
+				<a class="dropdown-item text-dark font-weight-bold" id = "CSR" href="<?php echo base_url();?>Welcome/CSR_Page" >Corporate Social Responsibility (CSR)</a>
+				<a class="dropdown-item text-dark font-weight-bold" id="Donate" href="<?php echo base_url();?>Welcome/Donate">Donate</a>
 				
 				
 			</div>
       </li>
 	  <li class="nav-item ">
-        <a class="nav-link text-dark font-weight-bold ml-3" id="Event&Press"href="#" onclick="Next()">EVENT & PRESS </a>
+        <a class="nav-link text-dark font-weight-bold ml-3" id="Event&Press"href="#" >EVENT & PRESS </a>
       </li>
 	  <li class="nav-item ">
-        <a class="nav-link text-dark font-weight-bold ml-3" id ="ContactUs" href="<?php echo base_url();?>index.php/Welcome/ContactUs" >CONTACT US</a>
+        <a class="nav-link text-dark font-weight-bold ml-3" id ="ContactUs" href="<?php echo base_url();?>Welcome/ContactUs" >CONTACT US</a>
 	  </li>
 	  <li class="nav-item ">
-        <a class="nav-link text-dark font-weight-bold ml-3" id ="DonateLink" href="<?php echo base_url();?>index.php/Welcome/Donate">DONATE</a>
+        <a class="nav-link text-dark font-weight-bold ml-3" id ="DonateLink" href="<?php echo base_url();?>Welcome/Donate">DONATE</a>
 	  </li>	
           
     </ul>

@@ -12,8 +12,10 @@
 			Ph : 8820206050</br>
 			Email:  kbtrust2018@gmail.com 
 		</p>
-		<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Leave Your Message</h5>
-
+		
+		
+		
+			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Leave Your Message</h5>
          <form>
 			<div class="input-group my-3">
 				<div class="input-group-append">
@@ -28,12 +30,19 @@
 				</div>
 				<input  type="text"class="form-control col-4 "  placeholder="Your email"></input>
 			</div>
-			<div class="form-group">
-				<label for="message">Message:</label></br>
-				<textarea class="form-control-lg row-2 col-4" id="message"></textarea>
+			<div class="input-group my-3">	
+				<div class="input-group-prepend">
+					<span class="input-group-text">Country</span>
+				</div>
+				<input  type="text"class="form-control col-4"  placeholder="Your Country"></input>
 			</div>
-			<button class="btn btn-md bg-warning text-dark">Submit</button>
+			<div class="row">
+				<label for="message" class="ml-2">Message</label></div>
+				<textarea class="form-control-lg row-2 col-4" id="message"></textarea>
+			<div class="row">
+			<button class="btn btn-md bg-warning text-dark">Submit</button></div>
 		</form>
+		
 		
 	</div>
 
