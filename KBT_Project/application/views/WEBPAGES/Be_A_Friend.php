@@ -20,38 +20,26 @@
 		</p>
 		<h3 class="text-center pb-3"><b>Volunteer Registration Form</b></h3>
 		<div class="container  shadow form_bg"><span class="rounded"></span>
-			<?php echo form_open('Volunteer_form'); ?>
+			<?php echo form_open('Volunteer_form/validate_form'); ?>
 		
-			<div class="row my-3 py-3"">
-					<div class="form-inline pb-4">
-						<div class="col">
+			<div class="row my-3 pt-4">
+					<div class="form-inline">
+						<div class="col-sm-2">
 					 
 							<label for="name">Name:</label>
 						</div>	
-					
-						<div class="col">
-							<input name="fname" class="form-control mx-2" placeholder="First Name" id="first_name" value ="<?php echo set_value('fname');?>">
-								
+						<div class="col-lg-2">
+							<input name="Name" class="form-control" placeholder="Name" id="first_name" value ="<?php echo set_value('Name');?>">
 						</div>	
-					
-						<div class="col">
-							<input name="Mname" class="form-control mr-2" placeholder="Middle Name" id="middle_name" value ="<?php echo set_value('Mname');?>">
-							
-						</div>
-						<div>
-							<input name="lname" class="form-control mr-2" placeholder="Last Name" id="last_name" value ="<?php echo set_value('lname');?>" >
-							
-						</div>
-							
-							
+						
+						<div class="col-md text-danger small">
+										
+										<?php echo form_error('Name');?>
+										
+							</div>	
 		
 					</div>
-							<div class="row-lg">
-										<div  class=" col-sm text-danger small"></div>
-										<div  class=" col-md text-danger small"><?php echo form_error('fname');?></div>
-										<div  class="col-md  text-danger small"><?php echo form_error('Mname');?></div>
-										<div  class="col-md text-danger small"><?php echo form_error('lname');?></div>
-							</div>
+							
 						
 				</div>
 				
@@ -61,16 +49,17 @@
 						<label for="Gender" required> Gender:</label></div>
 					<div class="col mx-2">
 						
-							<select class="form-control" name="gender" placeholder="Select Gender">
-								<option value ="0" selected="selected">Select One Option</option>
-						    	<option value ="1">Male</option>
-						   		 <option value ="2">Female</option>
+							<select class="form-control" name="Gender" placeholder="Select Gender">
+								<option value ="0" <?php echo  set_select('Gender', '0', TRUE); ?>>Select One Option</option>
+						    	<option value ="Male" <?php echo  set_select('Gender', 'Male'); ?>>Male</option>
+						   		 <option value ="Female" <?php echo  set_select('Gender', 'Female'); ?>>Female</option>
+						   		  <option value ="Other" <?php echo  set_select('Gender', 'Other'); ?>>Other</option>
 
 						  </select>
 						
 						</div>
 						<div class="col text-danger small">
-								<?php echo form_error('gender');?>
+								<?php echo form_error('Gender');?>
 						</div>
 					</div>
 					
@@ -82,11 +71,11 @@
 							<label>Date of Birth:</label>
 						</div>	
 						<div class="col ">
-							<input name="DOB" class="form-control " type ="date" id="DOB" value ="<?php echo set_value('DOB');?>">
+							<input name="Date_Of_Birth" class="form-control " type ="date" id="DOB" value ="<?php echo set_value('Date_Of_Birth');?>">
 							
 						</div>
 						<div class-"row-lg">
-							<div class="col-md text-danger small"><?php echo form_error('DOB');?>
+							<div class="col-md text-danger small"><?php echo form_error('Date_Of_Birth');?>
 							</div>
 						</div>
 				</div>
@@ -97,11 +86,11 @@
 							<label>Father/Spouse Name:</label>
 						</div>
 						<div class="col-lg">
-							<input name="FName" class="form-control"  id="name" value ="<?php echo set_value('FName');?>">
+							<input name="Father_Name" class="form-control"  id="name" value ="<?php echo set_value('Father_Name');?>">
 							
 						</div>
 						<div class-"row-lg">
-							<div class="col-md text-danger small"><?php echo form_error('FName');?>
+							<div class="col-md text-danger small"><?php echo form_error('Father_Name');?>
 							</div>
 						</div>
 					</div>
@@ -111,9 +100,9 @@
 				<div class="form-inline pb-4">
 					
 						<label>Flat/Plot No:</label>
-						<input name="PlotNo" class="form-control mx-2"  id="Plot_No" value ="<?php echo set_value('PlotNo');?>">
+						<input name="Plot_No" class="form-control mx-2"  id="Plot_No" value ="<?php echo set_value('Plot_No');?>">
 						<div class-"row-lg">
-							<div class="col-md text-danger small"><?php echo form_error('PlotNo');?>
+							<div class="col-md text-danger small"><?php echo form_error('Plot_No');?>
 							</div>
 						</div>
 						
@@ -124,9 +113,9 @@
 			<div class="row-lg">
 					<div class="form-inline pb-4">	
 						<label >Street Name:</label>	
-						<input name="StreetName" class="form-control mx-2 col-5"  id="SteetName" value ="<?php echo set_value('StreetName');?>">
+						<input name="Street_Name" class="form-control mx-2 col-5"  id="SteetName" value ="<?php echo set_value('Street_Name');?>">
 						<div class-"row-lg">
-							<div class="col-md text-danger small"><?php echo form_error('StreetName');?>
+							<div class="col-md text-danger small"><?php echo form_error('Street_Name');?>
 							</div>
 						</div>
 					</div>
@@ -201,11 +190,11 @@
 						</div>
 						<div class="col">
 						
-							<input name="Emailid" type ="email" class="form-control" id="email" value ="<?php echo set_value('Emailid');?>">
+							<input name="Email" type ="email" class="form-control" id="email" value ="<?php echo set_value('Email');?>">
 							
 						</div>
 								<div class-"row-lg">
-							<div class="col-md text-danger small"><?php echo form_error('Emailid');?>
+							<div class="col-md text-danger small"><?php echo form_error('Email');?>
 							</div>
 						</div>
 					
@@ -247,35 +236,35 @@
 					<label><h4>Employment Status</h4></label>
 					<div class="col mb-3">
 					
-							<select class="form-control" name="employment_status">
-								<option value="0" selected="selected">Select One Option</option>
-						    	<option value ="1">Not Employed</option>
-						   		 <option value ="2">Govt. Employed</option>
-						   		 <option value ="3">Private Sector Employee</option>
-						   		 <option value ="4">Working in NGO</option>
-						   		 <option value ="5">Other</option>
+							<select class="form-control" name="Employment_Status">
+								<option value="0" selected="selected" <?php echo  set_select('Employment_Status', '0',TRUE); ?>>Select One Option</option>
+						    	<option value ="Not Employed" <?php echo  set_select('Employment_Status', 'Not Employed',TRUE); ?>>Not Employed</option>
+						   		 <option value ="Govt. Employed" <?php echo  set_select('Employment_Status', 'Govt. Employed',TRUE); ?>>Govt. Employed</option>
+						   		 <option value ="Private Sector Employee" <?php echo  set_select('Employment_Status', 'Private Sector Employee',TRUE); ?>>Private Sector Employee</option>
+						   		 <option value ="Working in NGO" <?php echo  set_select('Employment_Status', 'Working in NGO',TRUE); ?>>Working in NGO</option>
+						   		 <option value ="Other" <?php echo  set_select('Employment_Status', 'Other',TRUE); ?>>Other</option>
 
 						  </select>
 					
 				</div>
 				<div class="col text-danger small">
-						<?php echo form_error('employment_status');?>
+						<?php echo form_error('Employment_Status');?>
 				</div>
 				
 				<h4 class="mb-3">Write about self in 250 words:</h4>
 				<div class="row-lg pb-4">
-					<textarea  name="Self" type="text" class="form-control-lg  col-5" value ="<?php echo set_value('Self');?>" ></textarea>
+					<textarea  name="Write_About_Self" type="text" class="form-control-lg  col-5" value ="<?php echo set_value('Write_About_Self');?>" ></textarea>
 					<div class-"row-lg">
-							<div class="col-md text-danger small"><?php echo form_error('Self');?>
+							<div class="col-md text-danger small"><?php echo form_error('Write_About_Self');?>
 							</div>
 						</div>
 				
 				</div>
 				<h4 class="mb-3">Reason why you want to be a member of this trust:-</h4>
 				<div class="row-lg pb-4">
-					<textarea  name="Why" type="text" class="form-control-lg  col-5" value ="<?php echo set_value('Why');?>"></textarea>
+					<textarea  name="Reason_To_Join" type="text" class="form-control-lg  col-5" value ="<?php echo set_value('Reason_To_Join');?>"></textarea>
 					<div class-"row-lg">
-							<div class="col-md text-danger small"><?php echo form_error('Why');?>
+							<div class="col-md text-danger small"><?php echo form_error('Reason_To_Join');?>
 							</div>
 						</div>				
 				</div>
@@ -286,12 +275,12 @@
 							</div>
 							<div class="col-3-md">
 				
-								<input type="date" name="submit_date"class="form-control ml-4" value ="<?php echo set_value('submit_date');?>">
+								<input type="date" name="Reg_date"class="form-control ml-4" value ="<?php echo set_value('Reg_date');?>">
 								
 							</div>
 					</div>
 					<div class="col text-danger small">
-							<?php echo form_error('submit_date');?>
+							<?php echo form_error('Reg_date');?>
 					</div>		
 					
 				</div>

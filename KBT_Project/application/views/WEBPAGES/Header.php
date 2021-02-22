@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <!-- <title>Home</title> -->
+  <title>Kripa Benovolent Trust</title> 
   
-  <?echo Title("Login");?>
+ 
   <!-- NGO icon -->
   <link rel="icon" href="<?php echo base_url(); ?>assets/img/Logo.jpg" type="image/x-icon">
   <!-- Font Awesome -->

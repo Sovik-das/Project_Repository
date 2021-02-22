@@ -3,105 +3,97 @@
 $config = array(
         'friend_validation' => array(
                 array(
-                        'field' => 'fname',
-                        'label' => 'First Name',
-                        'rules' => 'required|alpha|min_length[3]'
+                        'field' => 'Name',
+                        'label' => 'Name',
+                        'rules' => 'required|trim|alpha|min_length[3]'
                 ),
-                array(
-                        'field' => 'Mname',
-                        'label' => 'Middle Name',
-                        'rules' => 'alpha|min_length[3]'
-                ),
-                array(
-                        'field' => 'lname',
-                        'label' => 'Last Name',
-                        'rules' => 'required|alpha|min_length[3]'
-                ),
+                
+                
 				array(
-                        'field' => 'DOB',
+                        'field' => 'Date_Of_Birth',
                         'label' => 'Date of Birth',
-                        'rules' => 'required'
+                        'rules' => ''
                 ),
 				array(
-                        'field' => 'FName',
+                        'field' => 'Father_Name',
                         'label' => 'Father/Spouse Name',
-                        'rules' => 'required|min_length[3]'
+                        'rules' => 'trim|min_length[3]'
                 ),
 				
 				array(
-                        'field' => 'PlotNo',
+                        'field' => 'Plot_No',
                         'label' => 'Flat/Plot No',
-                        'rules' => 'required|alpha_dash|numeric'
+                        'rules' => 'required|trim|regex_match[/^[\/|a-zA-Z|0-9|-]+$/]'
                 ),
 					
 				array(
-                        'field' => 'StreetName',
+                        'field' => 'Street_Name',
                         'label' => 'Street Name',
-                        'rules' => 'required'
+                        'rules' => 'required|trim'
                 ),
 				array(
                         'field' => 'Pincode',
                         'label' => 'Pincode',
-                        'rules' => 'required|integer'
+                        'rules' => 'integer'
                 ),
 				array(
                         'field' => 'Mobile',
                         'label' => 'Mobile',
-                        'rules' => 'required|numeric|exact_length[10]'
+                        'rules' => 'required|numeric|exact_length[10]|is_unique[volunteer_info.Mobile]'
                 ),
 				array(
-                        'field' => 'Emailid',
+                        'field' => 'Email',
                         'label' => 'Email',
-                        'rules' => 'required|valid_email'
+                        'rules' => 'required|trim|valid_email|is_unique[volunteer_info.Email]'
                 ),	
 				array(
                         'field' => 'PAN',
                         'label' => 'PAN NO',
-                        'rules' => 'required|alpha_numeric'
+                        'rules' => 'alpha_numeric|is_unique[volunteer_info.PAN]'
                 ),
 				array(
                         'field' => 'Aadhar',
                         'label' => 'Aadhar',
-                        'rules' => 'numeric|exact_length[16]'
+                        'rules' => 'trim|numeric|exact_length[16]|is_unique[volunteer_info.Aadhar]'
                 ),	
 				
 				array(
-                        'field' => 'Self',
+                        'field' => 'Write_About_Self',
                         'label' => 'Write about self',
-                        'rules' => 'required|alpha_numeric_spaces|callback_count_words'
+                        'rules' => 'required|trim|callback_count_words'
                 ),
 				array(
-                        'field' => 'Why',
+                        'field' => 'Reason_To_Join',
                         'label' => 'Reason why you want to be a member of this trust',
-                        'rules' => 'required|alpha_numeric_spaces|callback_count_words'
+                        'rules' => 'required|trim|callback_count_words'
                 ),
 				array(
-                        'field' => 'submit_date',
+                        'field' => 'Reg_date',
                         'label' => 'Date',
                         'rules' => 'required'
                 ),
 				array(
                         'field' => 'City',
                         'label' => 'City',
-                        'rules' => 'required|alpha|min_length[3]'
+                        'rules' => 'required|trim|alpha|min_length[3]'
                 ),
 				array(
                         'field' => 'State',
                         'label' => 'State',
-                        'rules' => 'required|alpha_numeric_spaces|min_length[3]'
+                        'rules' => 'required|trim|alpha_numeric_spaces|min_length[3]'
                 ),
 				array(
                         'field' => 'Country',
                         'label' => 'Country',
-                        'rules' => 'required|alpha|min_length[3]'
+                        'rules' => 'required|trim|alpha|min_length[3]'
                 ),
 				array(
-                        'field' => 'gender',
+                        'field' => 'Gender',
                         'label' => 'Gender',
                         'rules' => 'required|callback_check_select_input'
                 ),
 				array(
-                        'field' => 'employment_status',
+                        'field' => 'Employment_Status',
                         'label' => 'Employment Status',
                         'rules' => 'required|callback_check_select_input'
                 ),
@@ -109,7 +101,32 @@ $config = array(
 	
 
 				
-        )
+        ),
+
+	'contact_us_form'=>array(
+			
+			array(
+                        'field' => 'NAME',
+                        'label' => 'Name',
+                        'rules' => 'trim|required|min_length[3]|regex_match[/^[a-zA-z]+([\s][a-zA-Z]+)*$/]'
+                ),
+			array(
+                        'field' => 'EmailId',
+                        'label' => 'Email',
+                        'rules' => 'trim|required|valid_email'
+                ),
+			array(
+                        'field' => 'COUNTRY',
+                        'label' => 'Country',
+                        'rules' => 'trim|required|min_length[3]'
+                ),
+			array(
+                        'field' => 'MESSAGE',
+                        'label' => 'Message',
+                        'rules' => 'trim|required'
+                ),
+
+	)
 );
 
 

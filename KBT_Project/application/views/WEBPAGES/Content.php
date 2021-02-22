@@ -16,8 +16,8 @@
         
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Light mask</h3>
-        <p>First text</p>
+        <h3 class="h3-responsive"><Strong>A Social Organization Serving Humanity</Strong></h3>
+        
       </div>
     </div>
     <div class="carousel-item">
@@ -28,8 +28,8 @@
         
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Strong mask</h3>
-        <p>Secondary text</p>
+        <h3 class="h3-responsive"><Strong>A Social Organization Serving Humanity</Strong></h3>
+        
       </div>
     </div>
     <div class="carousel-item">
@@ -40,8 +40,8 @@
         
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Slight mask</h3>
-        <p>Third text</p>
+        <h3 class="h3-responsive"><Strong>A Social Organization Serving Humanity</Strong></h3>
+        
       </div>
     </div>
   </div>
@@ -69,7 +69,7 @@
 				in March 2018. 
 
 			</p>
-			<button class="btn btn-primary" onclick ="location.href='About_Us.html';">Read more</button>
+			<button class="btn btn-primary" onclick ="window.location='<?php echo base_url("Welcome/AboutUs");?>'">Read more</button>
 		</div>
 	</div>
 <!---Jumpbotron_End-->
@@ -82,8 +82,8 @@
 	<img class="card-img-top" src="<?php echo base_url(); ?>assets/img/SlumEdu_1.jpg" alt="Card image" height="190px" width="400px">
     <div class="card-body text-center">
 		<h4 class="card-title">Education</h4>
-      <p class="card-text">Some text inside the first card</p>
-	  <a href="#" class="btn btn-primary stretched-link" onclick ="location.href='Free_Coaching_Class.html';">Read More</a>
+      
+	  <a href="#" class="btn btn-primary stretched-link" onclick ="window.location='<?php echo base_url("Welcome/FreeCoachingClass");?>'">Read More</a>
     </div>
   </div>
   <div class="card ">
@@ -91,8 +91,8 @@
     <div class="card-body text-center">
 		
 		<h4 class="card-title">Elderly Care</h4>
-		<p class="card-text">Some text inside the first card</p>
-		<a href="#" class="btn btn-primary stretched-link" onclick ="location.href='ElderlyCare.html';">Read More</a>
+	
+		<a href="#" class="btn btn-primary stretched-link" onclick ="window.location='<?php echo base_url("Welcome/ElderlyCare");?>'">Read More</a>
     </div>
   </div>
   <div class="card ">
@@ -100,8 +100,8 @@
     <div class="card-body text-center">
 	  
 		<h4 class="card-title">Skill Development Training</h4>	
-      <p class="card-text">Some text inside the first card</p>
-	  <a href="#" class="btn btn-primary stretched-link" onclick ="location.href='Life_Skill_Project.html';">Read More</a>
+      
+	  <a href="#" class="btn btn-primary stretched-link" onclick ="window.location='<?php echo base_url("Welcome/LifeSkill_Project");?>'">Read More</a>
     </div>
   </div>
  </div> 

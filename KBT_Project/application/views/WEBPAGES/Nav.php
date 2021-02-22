@@ -23,7 +23,7 @@
 			<div class="dropdown-menu dropdown-content ">
 				
 				<a class="dropdown-item text-dark font-weight-bold" id ="AboutUs"  href="<?php echo base_url();?>Welcome/AboutUs">ABOUT KBT</a>
-				<a class="dropdown-item text-dark font-weight-bold" href="Members">BOARD MEMBERS</a>
+				<a class="dropdown-item text-dark font-weight-bold" href="<?php echo base_url();?>Welcome/Board_Members">BOARD MEMBERS</a>
 				<a class="dropdown-item text-dark font-weight-bold" id="Admin" href="<?php echo base_url();?>Welcome/AdministrativePage">ADMINISTRATIVE & LEGAL STATUS</a>
 				
 			</div>
@@ -56,7 +56,7 @@
 			</div>
       </li>
 	  <li class="nav-item ">
-        <a class="nav-link text-dark font-weight-bold ml-3" id="Event&Press"href="#" >EVENT & PRESS </a>
+        <a class="nav-link text-dark font-weight-bold ml-3" id="Event&Press"href="<?php echo base_url();?>Welcome/Event_And_Press" >EVENT & PRESS </a>
       </li>
 	  <li class="nav-item ">
         <a class="nav-link text-dark font-weight-bold ml-3" id ="ContactUs" href="<?php echo base_url();?>Welcome/ContactUs" >CONTACT US</a>

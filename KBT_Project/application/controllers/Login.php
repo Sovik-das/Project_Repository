@@ -12,11 +12,11 @@ class Login extends CI_Controller{
         }
 		
 		public function index(){
-		//$this->load->helper('html');
-		//Title("Login");	
+		/*
 		$this->load->view('WEBPAGES/Header');
-		$this->load->view('WEBPAGES/Login_New_Page');
-		//$this->load->view('WEBPAGES/Footer');
+		$this->load->view('WEBPAGES/Login_New_Page');*/
+		$this->load->view('WEBPAGES/Page_Not_Found');
+		
 	}
 
 }

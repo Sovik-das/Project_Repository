@@ -70,10 +70,9 @@ class Welcome extends CI_Controller {
 
 
 		public function ContactUs(){
-			$this->load->view('WEBPAGES/Header.php');
-        	$this->load->view('WEBPAGES/Nav.php');
+			
         	$this->load->view('WEBPAGES/ContactUs.php');
-        	$this->load->view('WEBPAGES/Footer.php');
+        	
 			
 			}
 
@@ -162,10 +161,42 @@ class Welcome extends CI_Controller {
 
 	public function Event_And_Press(){
 
-		$this->show_404();
+		$this->load->view('WEBPAGES/Page_Not_Found.php');
 	}
-
 		
+	public function Board_Members(){
+		
+		$this->load->view('WEBPAGES/Page_Not_Found.php');	
+			}
+	public function Validate_Contact_Us(){
+		
+		if($this->form_validation->run('contact_us_form')){
+			$this->load->model('Message','Mg');
+			//echo ("Validation Successfull");
+				$msg = $this->input->post();
+				if($this->Mg->save_message($msg)){
+							echo '<script type="text/JavaScript">  
+    					 alert("Successfully Submitted"); 
+    					 </script>';
+						$this->load->view('WEBPAGES/ContactUs.php');
+					
+				}
+					else{
+							echo '<script type="text/JavaScript">  
+    					 alert("Failed to submit"); 
+    					 </script>';
+						}
+		}
+		else{
+				$this->load->view('WEBPAGES/ContactUs.php');
+					//echo("Not Successfull");
+			
+		}
+
+
+	}	
+
+	
 
 }
 
